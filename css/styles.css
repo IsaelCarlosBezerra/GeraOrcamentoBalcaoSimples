@@ -1,0 +1,158 @@
+/* Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #494747;
+  min-height: 100vh;
+}
+
+#header {
+  margin: 5px;
+  padding: 15px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  position: fixed;
+  top: 1px;
+  left: calc((100% - 800px) / 2);
+  z-index: 1;
+  border: 1px solid #fff;
+}
+
+#header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  margin-top: 60px;
+  border: 1px solid #fff;
+}
+
+#entrada {
+  margin: 25px 0;
+  width: 90%;
+  display: flex;
+}
+
+#entrada img {
+  width: 100%;
+}
+
+#imagem {
+  background-color: #494747;
+  max-width: 50%;
+  border: 1px solid #fff;
+}
+
+#form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #494747;
+  color: #fff;
+  padding-bottom: 5px;
+  border: 1px solid #fff;
+}
+
+#title {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+  background-color: #494747;
+  color: #fff;
+}
+
+#form form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+#form form input {
+  width: 100px;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+#form form input[type="submit"] {
+  width: 96%;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  margin-right: 5px;
+}
+
+#form-controls {
+  padding-bottom: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#form-controls input {
+  text-align: end;
+}
+
+.lista-container {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 25px;
+  border: 1px solid #fff;
+}
+
+#lista-table {
+  width: 100%;
+  text-align: end;
+  background-color: #fff;
+  padding: 5px;
+}
+
+#container #form h2 {
+  margin-top: 5px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hiden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+thead {
+  font-size: 1.1rem;
+}

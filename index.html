@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balcao uma porta</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer type="module"></script>
+  </head>
+  <body id="inicio">
+    <header id="header">
+      <nav id="navbar">
+        <a href="#inicio">Início</a>
+        <a href="#pecas">Lista de peças</a>
+        <a href="#fitas">Fitas de borda</a>
+        <a href="#ferragens">Ferragens</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#resumo">Resumo</a>
+      </nav>
+    </header>
+    <div id="container">
+      <div id="entrada">
+        <div id="imagem">
+          <img src="img/BalcaoUmaPorta.png" alt="Balcão uma porta" />
+        </div>
+        <div id="form">
+          <h2 id="title">Balcão uma porta</h2>
+          <form>
+            <div id="form-controls">
+              <label for="altura">Altura</label>
+              <input
+                type="number"
+                name="altura"
+                id="altura"
+                value="700"
+                placeholder="Digite a altura do móvel"
+              />
+            </div>
+            <div id="form-controls">
+              <label for="largura">Largura</label>
+              <input
+                type="number"
+                name="largura"
+                id="largura"
+                value="400"
+                placeholder="Digite a largura do móvel"
+              />
+            </div>
+            <div id="form-controls">
+              <label for="profundidade">Profundidade</label>
+              <input
+                type="number"
+                name="profundidade"
+                id="profundidade"
+                value="500"
+                placeholder="Digite a profundidade do móvel"
+              />
+            </div>
+            <input id="submit" type="submit" value="Calcular" />
+          </form>
+        </div>
+      </div>
+      <div id="pecas" class="hiden lista-container">
+        <h2 id="title">Lista de peças</h2>
+        <table id="lista-table">
+          <thead>
+            <th>Descrição</th>
+            <th>Qtd.</th>
+            <th>Comprimento</th>
+            <th>Largura</th>
+            <th>Val. Un</th>
+            <th>Subtotal</th>
+          </thead>
+          <tbody id="table-body-pecas"></tbody>
+        </table>
+      </div>
+      <div id="fitas" class="hiden lista-container">
+        <h2 id="title">Fitas de borda</h2>
+        <table id="lista-table">
+          <thead>
+            <th>Peça</th>
+            <th>Qtd.</th>
+            <th>Val. Un</th>
+            <th>Subtotal</th>
+          </thead>
+          <tbody id="table-body-fitas"></tbody>
+        </table>
+      </div>
+      <div id="ferragens" class="hiden lista-container">
+        <h2 id="title">Ferragens</h2>
+        <table id="lista-table">
+          <thead>
+            <th>Descrição</th>
+            <th>Qtd</th>
+            <th>Val. Un</th>
+            <th>SubTotal</th>
+          </thead>
+          <tbody id="table-body-ferragens"></tbody>
+        </table>
+      </div>
+      <div id="servicos" class="hiden lista-container">
+        <h2 id="title">Serviços</h2>
+        <table id="lista-table">
+          <thead>
+            <th>Descrição</th>
+            <th>Qtd</th>
+            <th>Val. Un</th>
+            <th>SubTotal</th>
+          </thead>
+          <tbody id="table-body-servicos"></tbody>
+        </table>
+      </div>
+      <div id="resumo" class="hiden lista-container">
+        <h2 id="title">Resumo</h2>
+        <table id="lista-table">
+          <thead>
+            <th>Descrição</th>
+            <th>SubTotal</th>
+          </thead>
+          <tbody id="table-body-resumo"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
