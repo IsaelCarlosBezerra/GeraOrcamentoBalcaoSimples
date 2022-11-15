@@ -1,0 +1,29 @@
+# Node modules
+node_modules
+dist
+
+# Adonis directory for storing tmp files
+tmp/**/*
+!tmp/.gitkeep
+
+# Environment variables, never commit this file
+.env
+.idea/
+# The development sqlite file
+database/*.sqlite
+
+# Remove public
+public/*/**
+!public/fonts/**
+!public/css/**
+!public/images/**
+
+.idea/
+
+coverage
+
+
+**/*.js
+**/*.map
+**/*.d.ts
+tsconfig.tsbuildinfo
